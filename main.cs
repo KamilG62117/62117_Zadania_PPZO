@@ -12,9 +12,15 @@ class Program {
     Console.Write("Podaj liczbe b: ");
     b = int.Parse(Console.ReadLine());
 
-    Console.WriteLine("Co chcesz zrobić?");
-    Console.WriteLine("[1]Dodawanie [2]Odejmowanie [3]Mnożenie [4]Dzielenie");
-    wybor = int.Parse(Console.ReadLine());
+    do {
+      Console.WriteLine("\nCo chcesz zrobić?");
+      Console.WriteLine("[1]Dodawanie [2]Odejmowanie [3]Mnożenie [4]Dzielenie");
+      wybor = int.Parse(Console.ReadLine());
+      
+      if (wybor < 1 || wybor > 4) {
+        Console.WriteLine("Błędny wybór! Wybierz liczbę od 1 do 4.");
+      }
+    } while (wybor < 1 || wybor > 4);
     
     switch (wybor) {
       case 1:
