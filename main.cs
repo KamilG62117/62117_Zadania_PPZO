@@ -36,10 +36,10 @@ class Program {
         Console.WriteLine($"Średnia ocen: {srednia}");
         Console.WriteLine("");
         if(srednia>=3.0){
-          Console.WriteLine("Uczeń zdał, ponieważ średnia ocen wynosi minimum 3.0");
+          Console.WriteLine("Uczeń zdał.");
         }
       else{
-        Console.WriteLine("Uczeń nie zdał, ponieważ średnia ocen jest mniejsza niż 3.0");
+        Console.WriteLine("Uczeń nie zdał.");
       }
       }
   }
