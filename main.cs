@@ -16,12 +16,12 @@ class Program {
         break;
       }
       else if (wybor == 1) {
-        Console.WriteLine("Podaj stopnie Celsjusza:");
+        Console.Write("Podaj stopnie Celsjusza: ");
         stopnie = double.Parse(Console.ReadLine());
         Console.WriteLine("Stopnie Fahrenheita: " + (stopnie * 1.8 + 32));
       }
       else if (wybor == 2) {
-        Console.WriteLine("Podaj stopnie Fahrenheita:");
+        Console.Write("Podaj stopnie Fahrenheita: ");
         stopnie = double.Parse(Console.ReadLine());
         Console.WriteLine("Stopnie Celsjusza: " + (stopnie - 32) / 1.8);
       }
