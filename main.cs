@@ -14,22 +14,28 @@ class Program {
 
     Console.WriteLine("Co chcesz zrobić?");
     Console.WriteLine("[1]Dodawanie [2]Odejmowanie [3]Mnożenie [4]Dzielenie");
-    wybor = int.Parse(Console.ReadLine())
-    switch
-    case 1:
-      Console.WriteLine("Wynik dodawania: " + (a + b));
-      break
-    case 2:
-      Console.WriteLine("Wynik odejmowania: " + (a - b));
-      break
-    case 3:
-      Console.WriteLine("Wynik mnożenia: " + (a * b));
-      break
-    case 4:
-      Console.WriteLine("Wynik dzielenia: " + (a / b));
-      break
-    default: 
-      Console.WriteLine("Podano zły wybór");
-      break
+    wybor = int.Parse(Console.ReadLine());
+    
+    switch (wybor) {
+      case 1:
+        Console.WriteLine("Wynik dodawania: " + (a + b));
+        break;
+      case 2:
+        Console.WriteLine("Wynik odejmowania: " + (a - b));
+        break;
+      case 3:
+        Console.WriteLine("Wynik mnożenia: " + (a * b));
+        break;
+      case 4:
+        if (b != 0) {
+          Console.WriteLine("Wynik dzielenia: " + ((double)a / b));
+        } else {
+          Console.WriteLine("Nie można dzielić przez zero!");
+        }
+        break;
+      default: 
+        Console.WriteLine("Podano zły wybór");
+        break;
+    }
   }
 }
