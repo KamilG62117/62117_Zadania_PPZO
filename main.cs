@@ -3,7 +3,8 @@ using System;
 
 class Program {
   public static void Main (string[] args) {
-    int a, b, wybor;
+    double a, b;
+    int wybor;
     
     do {
       Console.Write("Podaj liczbe a: ");
@@ -37,18 +38,19 @@ class Program {
             break;
           case 4:
             if (b != 0) {
-              Console.WriteLine("Wynik dzielenia: " + ((double)a / b));
+              Console.WriteLine("Wynik dzielenia: " + (a / b));
             } else {
               Console.WriteLine("Nie można dzielić przez zero!");
             }
             break;
         }
-        Console.WriteLine("\nNaciśnij Enter, aby kontynuować...");
+        Console.WriteLine("");
+        Console.WriteLine("Naciśnij Enter, aby wykonać następne obliczenia...");
         Console.ReadLine();
         Console.Clear();
       }
     } while (wybor != 0);
     
-    Console.WriteLine("Dziękuję za skorzystanie z kalkulatora!");
+    Console.WriteLine("Zamykanie programu...");
   }
 }
