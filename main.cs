@@ -8,10 +8,10 @@ class Program {
     
     do {
       Console.Write("Podaj liczbe a: ");
-      a = int.Parse(Console.ReadLine());
+      a = double.Parse(Console.ReadLine());
       Console.WriteLine("");
       Console.Write("Podaj liczbe b: ");
-      b = int.Parse(Console.ReadLine());
+      b = double.Parse(Console.ReadLine());
       Console.WriteLine("");
       
       do {
