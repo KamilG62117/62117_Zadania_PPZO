@@ -13,7 +13,7 @@ class Program {
     Console.WriteLine("");
     do {
       Console.WriteLine("Co chcesz zrobić?");
-      Console.WriteLine("[1]Dodawanie [2]Odejmowanie [3]Mnożenie [4]Dzielenie");
+      Console.WriteLine("[0]Zamknij [1]Dodawanie [2]Odejmowanie [3]Mnożenie [4]Dzielenie");
       Console.Write("Wybór: ");
       wybor = int.Parse(Console.ReadLine());
 
