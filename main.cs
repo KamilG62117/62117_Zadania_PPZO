@@ -1,4 +1,3 @@
-
 using System;
 
 class Program {
@@ -17,12 +16,12 @@ class Program {
       Console.WriteLine("[1]Dodawanie [2]Odejmowanie [3]Mnożenie [4]Dzielenie");
       Console.Write("Wybór: ");
       wybor = int.Parse(Console.ReadLine());
-      
-      if (wybor !=1 || wybor !=2 || wybor!=3 || wybor!=4) {
+
+      if (wybor != 1 && wybor != 2 && wybor != 3 && wybor != 4) {
         Console.WriteLine("Błędny wybór! Spróbuj jeszcze raz.");
       }
-    } while (wybor < 1 || wybor > 4);
-    
+    } while (wybor != 1 && wybor != 2 && wybor != 3 && wybor != 4);
+
     switch (wybor) {
       case 1:
         Console.WriteLine("Wynik dodawania: " + (a + b));
